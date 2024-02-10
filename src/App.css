@@ -8,12 +8,40 @@ footer img{
 .dropdown-item:hover {
     color: #000 !important;
   }
-  .loader {
+.card-body{
+  position: relative;
+}
+/* .card-body p{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 15px;
+
+} */
+.card-body spc{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+
+  /* font-size: smaller; */
+
+}
+.card-body a{
+  position: absolute;
+  bottom: 10px;
+  /* border: none; */
+  left: auto;
+}
+div.infinite-scroll-component {
+  overflow: hidden !important;
+}
+
+
+.loader {
     transform: rotateZ(45deg);
     perspective: 1000px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 40px;
+    height: 40px;
     color: #0c0c0c;
   }
     .loader:before,
@@ -56,28 +84,28 @@ footer img{
   @keyframes spin {
     0%,
     100% {
-      box-shadow: .7em 0px 0 0px currentcolor;
+      box-shadow: .3em 0px 0 0px currentcolor;
     }
     12% {
-      box-shadow: .7em .7em 0 0 currentcolor;
+      box-shadow: .3em .3em 0 0 currentcolor;
     }
     25% {
-      box-shadow: 0 .7em 0 0px currentcolor;
+      box-shadow: 0 .3em 0 0px currentcolor;
     }
     37% {
-      box-shadow: -.7em .7em 0 0 currentcolor;
+      box-shadow: -.3em .3em 0 0 currentcolor;
     }
     50% {
-      box-shadow: -.7em 0 0 0 currentcolor;
+      box-shadow: -.3em 0 0 0 currentcolor;
     }
     62% {
-      box-shadow: -.7em -.7em 0 0 currentcolor;
+      box-shadow: -.3em -.3em 0 0 currentcolor;
     }
     75% {
-      box-shadow: 0px -.7em 0 0 currentcolor;
+      box-shadow: 0px -.3em 0 0 currentcolor;
     }
     87% {
-      box-shadow: .7em -.7em 0 0 currentcolor;
+      box-shadow: .3em -.3em 0 0 currentcolor;
     }
   }
 
@@ -92,6 +120,12 @@ footer img{
     .card{
         height: 400px;
     }
+    .card-body .spc{
+      line-height: 5px ;
+    
+      /* font-size: smaller; */
+    
+    }
     
 }
 @media (min-width: 577px) and (max-width: 767px){
@@ -103,6 +137,13 @@ footer img{
 @media screen and (max-width: 576px){
     .card{
         height: 440px;
+    }
+    .card .card-text{
+      margin-bottom: 1px;
+      font-size: medium;
+    }
+    .card .card-title{
+      line-height: 20px;
     }
     
 }

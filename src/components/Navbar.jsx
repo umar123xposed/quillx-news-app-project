@@ -1,5 +1,6 @@
 import React from 'react'
 import quillx from '../assets/quillx.png'
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -13,7 +14,7 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link text-light" aria-current="page" href="/">Home</a>
+          <Link className="nav-link text-light" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
           <a className="nav-link text-light" href="/">Link</a>
@@ -23,13 +24,13 @@ export default function Navbar() {
             Categories
           </a>
           <ul className="dropdown-menu bg-dark">
-            <li><a className="dropdown-item text-light" href="/">Business</a></li>
-            <li><a className="dropdown-item text-light" href="/">Entertainment</a></li>
-            <li><a className="dropdown-item text-light" href="/">General</a></li>
-            <li><a className="dropdown-item text-light" href="/">Health</a></li>
-            <li><a className="dropdown-item text-light" href="/">Science</a></li>
-            <li><a className="dropdown-item text-light" href="/">Sports</a></li>
-            <li><a className="dropdown-item text-light" href="/">Technology</a></li>
+            <li><Link className="dropdown-item text-light" to="/business">Business</Link></li>
+            <li><Link className="dropdown-item text-light" to="/entertainment">Entertainment</Link></li>
+            <li><Link className="dropdown-item text-light" to="/">General</Link></li>
+            <li><Link className="dropdown-item text-light" to="/health">Fashion & Beauty</Link></li>
+            <li><Link className="dropdown-item text-light" to="/science">Science</Link></li>
+            <li><Link className="dropdown-item text-light" to="/sports">Sports</Link></li>
+            <li><Link className="dropdown-item text-light" to="/technology">Technology</Link></li>
           </ul>
           </li>
           </ul>

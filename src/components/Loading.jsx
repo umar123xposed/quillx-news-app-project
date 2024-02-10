@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Loading() {
   return (
-    <div className='d-flex justify-content-center align-items-center' style={{'height':'100vh'}}>
+    <div className='d-flex justify-content-center align-items-center' style={{'height':'20vh'}}>
       {/* <img src={loading} alt="" /> */}
       <span className="loader"></span>
     </div>
